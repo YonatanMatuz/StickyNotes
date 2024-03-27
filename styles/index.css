@@ -1,0 +1,119 @@
+
+@keyframes fadein {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeout {
+    from {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+    }
+  }
+  
+  .card{
+      animation: 3s linear fadein;
+      background-image:url('images/noteimg4final.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      padding: 0px;
+      margin-left: 5rem;
+      font-family: 'Merienda', cursive;
+      font-size: large;
+
+   }
+
+#dateText{
+  position: absolute;
+  top: 15rem;
+  font-family: 'Merienda', cursive;
+}
+#deleteBtn{
+  position: absolute;
+  background-image: url('images/trashImg.png');
+  background-size: cover;
+  height: 25px;
+  width: 25px;
+  left: 12rem;
+  top: 2rem;
+  display: none;
+  font-family: 'Merienda', cursive;
+  font-size: large;
+}
+.card:hover #deleteBtn{
+  display: block;
+}
+#taskText{
+
+  height: 165px;
+  width: 10rem;
+  font-family: 'Merienda', cursive;
+  overflow-y: scroll;
+}
+#taskText::-webkit-scrollbar {
+  display: none;
+}
+#innerFormContainer{
+  visibility: hidden;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  margin-left: 37%;
+  font-family: 'Merienda', cursive;
+  font-size: large;
+  
+}
+#rootBtn{
+  position: absolute;
+  background-image: url('images/PostItImgFINAL.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 31rem;
+  width: 25rem;
+  left: 45rem;
+  margin-top: 0;
+  font-family: 'Merienda', cursive;
+}
+#startText{
+  text-align: center;
+  color: white;
+  font-family: 'Merienda', cursive;
+    
+}
+#bg-div{
+  background-image: url('images/form-img2.png');
+  background-repeat: no-repeat;
+  background-size: 30rem;
+  height: 41rem;
+  width: 50rem;
+  padding-top: 7rem;
+  padding-left: 2rem;
+  
+}
+#startDiv{
+  margin-top: 5rem;
+}
+#formInputs{
+  padding-top: 1rem;
+  padding-left: 5rem;
+}
+body {
+  background-image: url("images/maybe-bg-img.jpg") !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 0;
+  margin-bottom: 0;
+} 
+
+
+
+
+

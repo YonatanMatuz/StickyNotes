@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sticky notes</title>
+    <!-- bootstrap -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- custom css settings -->
+
+    <link rel="stylesheet" href="styles/index.css" />
+
+    <!-- imported font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Internal css i couldnt override with my own css file imported above -->
+  </head>
+  <body>
+
+    <!-- Starting Post-it Box that needs to be opened -->
+    <div id="startDiv">
+    <h2 id="startText">To make a sticky note, click me!</h2>
+    <button id="rootBtn" type="button" class="btn border border-0"></button>
+    </div>
+
+    <!------------------The container holding the form ---------------------->
+    <div id="innerFormContainer" class="container col-4 border border-0">
+      <form id="rootForm">
+        <div id="bg-div">
+        <h4>Create a sticky note of your own!</h4>
+        <div id="formInputs">
+        <div class="mb-3 col-4">
+          <label id="taskLabel" class="form-label">Note Content</label>
+          <textarea
+            type="text"
+            class="form-control"
+            id="taskContent"
+            name="taskContent"
+          ></textarea>
+        </div>
+        <div class="mb-3 col-4">
+          <label id="dateLabel" class="form-label">Date</label>
+          <input
+            type="datetime-local"
+            class="form-control"
+            id="date"
+            name="date"
+          />
+        </div>
+        <button id="btnAddTask" type="submit" class="btn btn-success">
+          Add Task
+        </button>
+        <button id="btnClearShelf" type="button" class="btn btn-warning">
+          Delete Tasks
+        </button>
+      </div>
+        <br />
+      </div>
+      </form>
+    </div>
+
+    <!------------------The div holding the sticky notes the user creates ---------------------->
+    <div id="taskShelf" class="row"></div>
+    <script src="index.js"></script>
+  </body>
+</html>
